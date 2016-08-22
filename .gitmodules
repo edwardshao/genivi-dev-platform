@@ -35,3 +35,6 @@
 [submodule "meta-selinux"]
 	path = meta-selinux
 	url = https://github.com/edwardshao/meta-selinux.git
+[submodule "meta-genivi-dev"]
+	path = meta-genivi-dev
+	url = https://github.com/edwardshao/meta-genivi-dev.git
