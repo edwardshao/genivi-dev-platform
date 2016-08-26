@@ -28,7 +28,8 @@
 	url = git://git.yoctoproject.org/meta-raspberrypi
 [submodule "meta-renesas"]
 	path = meta-renesas
-	url = git://github.com/slawr/meta-renesas.git
+	url = git://github.com/edwardshao/meta-renesas.git
+	branch = genivi-9-bsp-1.10.0-weston-1.9.0
 [submodule "meta-intel"]
 	path = meta-intel
 	url = git://git.yoctoproject.org/meta-intel
