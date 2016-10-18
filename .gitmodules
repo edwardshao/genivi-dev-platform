@@ -12,7 +12,7 @@
 	url = git://git.yoctoproject.org/poky
 [submodule "meta-rust"]
 	path = meta-rust
-	url = git://github.com/jmesmon/meta-rust.git
+	url = https://github.com/edwardshao/meta-rust.git
 [submodule "meta-oic"]
 	path = meta-oic
 	url = http://git.yoctoproject.org/git/meta-oic.git
