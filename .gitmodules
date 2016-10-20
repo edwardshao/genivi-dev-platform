@@ -12,7 +12,7 @@
 	url = git://git.yoctoproject.org/poky
 [submodule "meta-rust"]
 	path = meta-rust
-	url = git://github.com/edwardshao/meta-rust.git
+	url = https://github.com/edwardshao/meta-rust.git
 [submodule "meta-oic"]
 	path = meta-oic
 	url = http://git.yoctoproject.org/git/meta-oic.git
@@ -31,11 +31,11 @@
 	url = git://git.yoctoproject.org/meta-intel
 [submodule "meta-selinux"]
 	path = meta-selinux
-	url = git://github.com/edwardshao/meta-selinux.git
+	url = https://github.com/edwardshao/meta-selinux.git
 [submodule "meta-genivi-dev"]
 	path = meta-genivi-dev
-	url = git://github.com/edwardshao/meta-genivi-dev.git
+	url = https://github.com/edwardshao/meta-genivi-dev.git
 [submodule "meta-renesas"]
 	path = meta-renesas
-	url = git://github.com/edwardshao/meta-renesas.git
+	url = https://github.com/edwardshao/meta-renesas.git
 	branch = genivi-9-bsp-1.10.0-weston-1.9.0
