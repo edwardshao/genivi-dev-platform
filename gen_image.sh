@@ -34,6 +34,13 @@ tar --extract --numeric-owner --preserve-permissions --preserve-order --totals \
 rm -rf $MNT_POINT_ROOT/boot/*
 cp --remove-destination $SRC_PATH/uImage $SRC_PATH/uImage-r8a7791-porter.dtb $MNT_POINT_ROOT/boot
 
+echo "tweak sshd config..."
+for config in sshd_config sshd_config_readonly; do
+	if [ -e $MNT_POINT_ROOT/etc/ssh/$config ]; then
+		sudo sed -i 's/^PermitEmptyPasswords.*/#PermitEmptyPasswords yes/' $MNT_POINT_ROOT/etc/ssh/$config
+	fi
+done
+
 echo "sync..."
 sync
 echo "umount disk image..."
