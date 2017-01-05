@@ -13,7 +13,7 @@ LICENSE_FLAGS_WHITELIST  += "commercial"
 # Flag for Faytech Touch Monitor support, '1' will enable kernel driver patch
 #USE_FAYTECH_MONITOR = "1"
 
-DISTRO_FEATURES_append=" selinux"
+DISTRO_FEATURES_append=" pam selinux"
 
 PREFERRED_VERSION_audiomanager ?= "7.0"
 PREFERRED_VERSION_audiomanagerplugins ?= "7.0"
