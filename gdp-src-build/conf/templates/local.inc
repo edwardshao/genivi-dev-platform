@@ -18,6 +18,7 @@ DISTRO_FEATURES_append=" pam selinux"
 PREFERRED_VERSION_audiomanager ?= "7.0"
 PREFERRED_VERSION_audiomanagerplugins ?= "7.0"
 
+PREFERRED_VERSION_refpolicy-mls = "2.20151208"
 
 # Disk Space Monitoring during the build
 #
