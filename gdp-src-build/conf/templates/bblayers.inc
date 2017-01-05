@@ -20,6 +20,7 @@ BBLAYERS ?= " \
   ${TOPDIR}/../meta-oic \
   ${TOPDIR}/../meta-erlang \
   ${TOPDIR}/../meta-rvi \
+  ${TOPDIR}/../meta-selinux \
   "
 
 BBLAYERS_NON_REMOVABLE ?= " \
