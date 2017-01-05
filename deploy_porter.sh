@@ -16,6 +16,13 @@ sudo tar --extract --numeric-owner --preserve-permissions --preserve-order --tot
 	 --directory=$MNT_POINT --file=$SRC_PATH/genivi-dev-platform-porter.tar.bz2 
 sudo cp --remove-destination $SRC_PATH/uImage $SRC_PATH/uImage-r8a7791-porter.dtb $MNT_POINT/boot
 
+echo "tweak sshd config..."
+for config in sshd_config sshd_config_readonly; do
+	if [ -e $MNT_POINT/etc/ssh/$config ]; then
+		sudo sed -i 's/^PermitEmptyPasswords.*/#PermitEmptyPasswords yes/' $MNT_POINT/etc/ssh/$config
+	fi
+done
+
 echo "sync..."
 sync
 
