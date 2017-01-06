@@ -2,7 +2,7 @@
 
 SRC_PATH=$PWD/gdp-src-build/tmp/deploy/images/porter
 
-image_file=`date +%Y-%m-%d`-gdp11-4G.img
+image_file=`date +%Y-%m-%d`-gdp11-selinux-4G.img
 echo "create empty disk image..."
 dd if=/dev/zero of=$image_file bs=1GB count=4
 echo "create disk partitions for disk image..."
